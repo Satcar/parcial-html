@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="arriba">
+  <header>
+    <div class="headerBox">
+      <img id="logo" src="img/logo.png" alt="Logo GreenHack" />
+      <h1>GreenHack</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Tienes dudas? Escribenos a traves de nuestro formulario. Estaremos encantados de ayudarte!</p>
+
+      <form action="submit.html" method="get" class="formulario-contacto">
+
+        <div class="form-row">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-row">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="form-row">
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required>
+        </div>
+
+        <div class="form-row">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit">Enviar</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <button id="volver-arriba"><a href="#arriba">↑ Volver arriba ↑</a></button>
+    <p>info@greenhack.com | Carrer de Pamplona, 96, Sant Martí, 08018 Barcelona | Tel: 123 456 789</p>
+  </footer>
+</body>
+</html>

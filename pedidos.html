@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="arriba">
+  <header>
+    <div class="headerBox">
+      <img id="logo" src="img/logo.png" alt="Logo GreenHack" />
+      <h1>GreenHack</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pedidos">
+      <h2>Pedidos</h2>
+      <p>Completa el siguiente formulario y nuestro equipo te contactara para confirmar los detalles y fechas de entrega</p>
+      <form action="submit.html" method="get" class="formulario-contacto">
+
+        <div class="form-row">
+          <label for="empresa">Empresa solicitante:</label>
+          <input type="text" id="empresa" name="empresa" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Correo electronico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="telefono">Telefono de contacto:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="123 456 789">
+        </div>
+
+        <div class="form-row">
+          <label for="fecha">Fecha de entrega deseada:</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div class="form-row">
+          <label for="pedido">Clase de pedido:</label>
+          <select id="pedido" name="pedido" required>
+            <option value="">Selecciona una opcion...</option>
+            <option value="jardin-eventos">Jardin para eventos</option>
+            <option value="entrada-floral">Entrada floral</option>
+            <option value="decoracion-privada">Decoracion floral privada</option>
+            <option value="otros">Otros...</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="detalles">Detalles (opcional):</label>
+          <textarea id="detalles" name="detalles" rows="4"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="color">Color preferido:</label>
+          <input type="color" id="color" name="color" value="#00796B">
+        </div>
+
+        <div class="form-row">
+          <label for="presupuesto">Presupuesto aproximado (€):</label>
+          <input type="number" id="presupuesto" name="presupuesto" min="50" step="25" required>
+        </div>
+
+        <div class="form-row">
+          <label for="observaciones">Observaciones:</label>
+          <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit">Enviar pedido</button>
+          <button type="reset">Limpiar formulario</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <button id="volver-arriba"><a href="#arriba">↑ Volver arriba ↑</a></button>
+    <p>info@greenhack.com | Carrer de Pamplona, 96, Sant Martí, 08018 Barcelona | Tel: 123 456 789</p>
+  </footer>
+</body>
+</html>
